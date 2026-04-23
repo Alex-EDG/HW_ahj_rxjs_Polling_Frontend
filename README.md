@@ -1,6 +1,6 @@
 # Домашнее задание к занятию "11. RxJS"
 
-[![Build status](https://ci.appveyor.com/api/projects/status/d5oqd05cajlsqj05?svg=true)](https://ci.appveyor.com/project/alex-edg/hw-ahj-rxjs-polling-frontend) [[Github Pages](https://github.com/Alex-EDG/HW_ahj_rxjs_Polling_Frontend)]
+[![Build status](https://ci.appveyor.com/api/projects/status/x21hc1mrdicl1ln4?svg=true)](https://ci.appveyor.com/project/Alex-EDG/hw-ahj-rxjs-polling-frontend) [[Github Pages](https://github.com/Alex-EDG/HW_ahj_rxjs_Polling_Frontend)]
 
 Правила сдачи задания:
 
