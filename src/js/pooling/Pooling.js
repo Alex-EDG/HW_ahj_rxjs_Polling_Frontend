@@ -48,7 +48,7 @@ export default class Pooling {
               messages: [],
             })),
           )),
-        takeWhile((response) => response.status !== 'finish' || (response.status === 'finish' && response.messages.length === 100)),
+        takeWhile((response) => response.status !== 'finish'),
       )
       .subscribe({
         next: (response) => {
@@ -57,7 +57,11 @@ export default class Pooling {
           this.lastId = this.messages.length === 0 ? '' : this.messages[this.messages.length - 1].id;
         },
         // eslint-disable-next-line no-console
-        error: (error) => console.log('Error', error),
+        error: (error) => {
+          if (error.isCritical) {
+            this.sentry.captureException(error);
+          }
+        },
       });
   }
 
